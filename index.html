@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minis × GitHub · 已接通</title>
+<style>
+  :root{--bg:#0b0f16;--card:#141a24;--line:#222c3a;--fg:#e8eef7;--dim:#8b9bb4;--acc:#5eead4;--acc2:#818cf8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;background:radial-gradient(1200px 600px at 15% -10%,#16233a 0%,transparent 60%),radial-gradient(900px 500px at 90% 10%,#241a3a 0%,transparent 55%),var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;padding:56px 20px 80px}
+  .wrap{max-width:760px;margin:0 auto}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--acc);border:1px solid #1d4b45;background:#0f2724;border-radius:999px;padding:5px 14px;letter-spacing:.4px}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 10px var(--acc);animation:p 2s infinite}
+  @keyframes p{50%{opacity:.35}}
+  h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:22px 0 14px;letter-spacing:-1px}
+  h1 em{font-style:normal;background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  p.lead{color:var(--dim);font-size:17px;max-width:56ch}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:34px 0}
+  .card{background:linear-gradient(180deg,#161d29,#121822);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
+  .card h3{font-size:14px;color:var(--acc);letter-spacing:.6px;margin-bottom:8px;font-weight:600}
+  .card p{font-size:14px;color:var(--dim);line-height:1.6}
+  code{background:#1b2432;border:1px solid var(--line);border-radius:6px;padding:2px 6px;font-size:13px;color:#c7d5ea;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:#5f708a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  a{color:var(--acc2);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:var(--acc2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge"><span class="dot"></span>LIVE ON GITHUB PAGES</span>
+  <h1>沙箱 → GitHub → <em>一条能点开的链接</em></h1>
+  <p class="lead">这页是一个静态文件，由 Minis 沙箱里的 git 直接推到 GitHub 仓库，Pages 自动构建。链路已经跑通，以后要发布什么，只需把文件丢进沙箱。</p>
+
+  <div class="grid">
+    <div class="card"><h3>01 · 身份</h3><p><code>zaixian681-cmyk</code><br>git 提交签名已配置</p></div>
+    <div class="card"><h3>02 · 通道</h3><p>gh CLI 2.63<br>GitHub MCP（46 个工具）</p></div>
+    <div class="card"><h3>03 · 发布</h3><p>push → Pages<br>公开仓库，全球可访问</p></div>
+  </div>
+
+  <p class="lead">接下来可以做的事：把网页/文档/小工具推到 <code>&lt;repo&gt;</code>，链接就是 <code>https://zaixian681-cmyk.github.io/&lt;repo&gt;/</code>；临时片段用 Gist；代码问题用 Issue / PR 直接开。</p>
+
+  <footer>
+    <span>Published from Minis sandbox · Alpine / PRoot</span>
+    <span id="t"></span>
+  </footer>
+</div>
+<script>document.getElementById('t').textContent=new Date(document.lastModified||Date.now()).toLocaleString('zh-CN')</script>
+</body>
+</html>
